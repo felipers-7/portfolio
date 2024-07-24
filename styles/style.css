@@ -154,4 +154,8 @@ span {
     .apresentacao-conteudo {
         width: auto;
     }
+
+    .rodape {
+        position: relative;
+    }
 }
