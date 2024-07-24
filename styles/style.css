@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #126f48;
+
+    --fonte-principal: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.12rem;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;     /* Ela especifica no CSS o tamanho dos espaços entre linhas e colunas em layouts de grid, flex e multi-column.  */
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 1.5rem;
+    font-family: var(--fonte-principal);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.12rem;
+    font-family: var(--fonte-secundaria);
+}
+body {
+    /*height: 100vh;      para criar o tamanho da página, 'V'iewport'H'eight */
+    background-color: rgb(194, 244, 236);
+    color: var(--cor-primaria);
+}
+
+.apresentacao__links {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte-secundaria);
+    gap: 20px;
+}
+
+.apresentacao__links__subtitulo {
+    justify-content: center;
+    width: 100%;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.3rem;
+}
+
+.titulo-destaque {
+    color: var(--cor-secundaria);
+    font-weight: bold; 
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+.foto {
+    width: 70%;
+    border-radius: 8px;
+}
+
+span {
+    color: var(--cor-secundaria);
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: var(--cor-primaria);
+    width: 280px;
+    font-size: 1.25rem;
+    text-align: center;
+    border: 2px solid var(--cor-secundaria);
+    padding: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.botao:hover {  /* para mudar algo no botão deixar mouse em cima*/
+    background-color: white;
+}
+
+.rodape {
+    background-color: white;
+    color: var(--cor-primaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.12rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.apresentacao__conteudo__texto__about {
+    font-size: 1.12rem;
+    font-family: var(--fonte-secundaria);
+    text-align: justify;
+}
+
+.foto__estudando {
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    
+    .apresentacao-conteudo {
+        width: auto;
+    }
+}
